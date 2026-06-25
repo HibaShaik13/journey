@@ -14,20 +14,20 @@ export default function BirthdayGirlSection({ onNext }: BirthdayGirlSectionProps
   const PORTRAITS = [
     {
       id: 1,
-      src: "/src/assets/images/pic5.png",
+      src: "/images/pic5.png",
       caption: "The smile that brightens even my darkest days. ❤️",
       style: "sm:translate-y-6 rotate-[-3deg]",
     },
     {
       id: 2, // Center portrait (Larger and with Crown effect)
-      src:"/src/assets/images/pic4.png",
+      src:"/images/pic4.png",
       caption: "Beautiful, graceful, and effortlessly unforgettable. ✨❤️",
       style: "scale-105 z-10 border-4 border-yellow-300 shadow-[0_0_25px_rgba(253,224,71,0.4)]",
       isCenter: true,
     },
     {
       id: 3,
-      src: "/src/assets/images/pic6.png",
+      src: "/images/pic6.png",
       caption: "Every little thing you do makes my heart smile. 💖",
       style: "sm:translate-y-6 rotate-[3deg]",
     },

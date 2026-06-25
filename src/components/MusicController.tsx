@@ -11,23 +11,19 @@ const ROMANTIC_TRACKS: Track[] = [
   {
     name: "romantic bgm",
     artist: "Gentle Romantic Instrumental",
-    url: "/src/assets/music/lovetone.mp3",
+    url: "/music/lovetone.mp3",
   },
   {
     name: "Eppudaina bgm",
     artist: "Acoustic Melody & Echoes",
-    url: "/src/assets/music/eppudaina_music.mp3",
+    url: "/music/eppudaina_music.mp3",
   },
   {
     name: "romantic music",
     artist: "Piano Soft Serenade",
-    url: "/src/assets/music/romantic_music.mp3",
+    url: "/music/romantic_music.mp3",
   },
-  {
-    name: "Beautiful Starry Echoes",
-    artist: "Slow Romance Chords",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
-  },
+  
 ];
 
 interface MusicControllerProps {
