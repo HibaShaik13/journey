@@ -12,27 +12,30 @@ interface PolaroidPhoto {
 const PHOTOS: PolaroidPhoto[] = [
   {
     id: 1,
-    src: "/src/assets/images/pic1.png",
+    src: "/images/pic1.png",
     caption: "Watching our dreams blend with the golden sunset sky. ❤️",
+    date: "30 june 2026",
     tilt: "group-hover:-rotate-2 rotate-1",
   },
   {
     id: 2,
-    src: "/src/assets/images/pic2.png",
+    src: "/images/pic2.png",
     caption: "Every glance between us tells a story that words never could. ❤️",
+    date: "30 june 2026",
     tilt: "group-hover:rotate-3 -rotate-1",
   },
   {
     id: 3,
-    src: "/src/assets/images/pic3.png",
+    src: "/images/pic3.png",
     caption: "Side by side, hand in hand, every path feels right with you. ❤️",
+    date: "30 june 2026",
     tilt: "group-hover:-rotate-3 -rotate-2",
   },
   {
     id: 4,
-    src: "/src/assets/images/image.png",
+    src: "/images/image.png",
     caption: "Hand in hand, promise in promise, through every phase. ❤️",
-
+date: "30 june 2026",
     tilt: "group-hover:rotate-2 rotate-2",
   },
 ];
