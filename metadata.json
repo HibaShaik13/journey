@@ -1,0 +1,6 @@
+{
+  "name": "Journey Through Time",
+  "description": "A magical, interactive, romantic journey through time celebrating a special birthday and love anniversary with memories, photos, letters, and wishes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

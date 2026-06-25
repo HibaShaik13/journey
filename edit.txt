@@ -1,0 +1,206 @@
+================================================================================
+           HOW TO CUSTOMIZE YOUR WEBSITE: IMAGES, DATES, TEXTS & MUSIC
+================================================================================
+
+This guide explains exactly how to replace the template content with your own
+personalized images, beautiful memories, specific dates, letters, and custom music.
+
+--------------------------------------------------------------------------------
+1. HOW AND WHERE TO EDIT YOUR IMAGES
+--------------------------------------------------------------------------------
+
+Your gallery currently uses high-quality placeholder images located either in 
+creative assets or via royalty-free Unsplash URLs. To use your own photos:
+
+📁 PASTE YOUR IMAGE FILES HERE:
+- Put your image files (.jpg, .jpeg, .png, .webp) inside the folder:
+  👉 `/src/assets/images/`
+  (Or you can create a folder like `/public/images/` and paste them there).
+
+📝 UPDATE PROJECTS / IMAGE PATHS IN THE CODE:
+Open the file:
+👉 `/src/components/GallerySection.tsx`
+
+Near the top of the file, you will see the `PHOTOS` array structured like this:
+```typescript
+const PHOTOS: PolaroidPhoto[] = [
+  {
+    id: 1,
+    src: "/src/assets/images/your_own_image_name.jpg", // <--- Paste your local file path here!
+    caption: "Watching our dreams blend with the golden sunset sky. ❤️",
+    date: "15 March 2023",
+    tilt: "group-hover:-rotate-2 rotate-1",
+  },
+  ...
+]
+```
+Simply replace the `src` paths with the local file paths of the images you pasted, 
+or you can paste direct public URLs (like an upload link from Discord, PostImg, Imgur, 
+Unsplash, or your own hosting server).
+
+--------------------------------------------------------------------------------
+2. HOW AND WHERE TO EDIT THE BG MUSIC (SONGS TO UPLOAD)
+--------------------------------------------------------------------------------
+
+You can customize the lofi / piano background music selection!
+
+📁 PLACE YOUR MUSIC FILES:
+- If you have `.mp3` background music files, place them in the public folder:
+  👉 `/public/` (or inside `/public/music/`)
+
+📝 CONFIGURE MUSIC TO TRACKS IN THE CODE:
+Open the file:
+👉 `/src/components/MusicController.tsx`
+
+Near the top, edit the `ROMANTIC_TRACKS` list:
+```typescript
+const ROMANTIC_TRACKS: Track[] = [
+  {
+    name: "Your Custom Song Name",
+    artist: "Your Loved One or Artist Name",
+    url: "/my_beautiful_song.mp3", // <--- Use your uploaded mp3 file (placed in /public/)
+  },
+  {
+    name: "Romantic Melody",
+    artist: "Piano Collection",
+    url: "https://example.com/another-direct-mp3-link.mp3", // <--- Or paste any direct .mp3 URL!
+  }
+];
+```
+
+*Tip: Make sure the URL ends with `.mp3` or points to a direct audio stream so the browser plays it automatically.*
+
+--------------------------------------------------------------------------------
+3. HOW AND WHERE TO EDIT DATES, MILESTONES & CHRONOLOGY
+--------------------------------------------------------------------------------
+
+To change the timeline dates and memory chapters:
+
+Open the file:
+👉 `/src/components/TimelineSection.tsx`
+
+Near the top, edit the `TIMELINE_EVENTS` array containing your special highlights:
+```typescript
+const TIMELINE_EVENTS: TimelineEvent[] = [
+  {
+    date: "14 February 2023", // <--- Change to your actual date!
+    title: "The Day We First Met 🌸", // <--- Change to your custom milestone title!
+    description: "A simple hello became the beginning of something beautiful...", // <--- Change description!
+    iconName: "met", // Choose from: "met", "talk", "date", "anniversary", "today"
+  },
+  ...
+]
+```
+
+--------------------------------------------------------------------------------
+4. HOW AND WHERE TO EDIT THE LOVE LETTER (BREAK THE SEAL MESSAGE)
+--------------------------------------------------------------------------------
+
+To change the deep personal letter revealed when your loved one breaks the seal:
+
+Open the file:
+👉 `/src/components/LetterSection.tsx`
+
+Scroll down to the letter paragraph layout (around line 70) and rewrite the paragraphs inside the `<p>` tags:
+```typescript
+<div className="pl-6 md:pl-8 font-sans leading-relaxed text-sm md:text-base">
+  <h3 className="font-serif text-3xl md:text-4xl text-[#850045] font-semibold pb-2 mb-6">
+    My Love, // <--- Change the greeting!
+  </h3>
+
+  <p className="mb-4 text-slate-700 select-text">
+    Every single day spent with you... // <--- Type your beautiful letter here!
+  </p>
+  ...
+</div>
+```
+
+--------------------------------------------------------------------------------
+5. HOW AND WHERE TO EDIT YOUR WEDDING / FUTURE PROMISES
+--------------------------------------------------------------------------------
+
+To rewrite the 6 future promise cards (Vows Bento Grid):
+
+Open the file:
+👉 `/src/components/PromisesSection.tsx`
+
+Locate the `PROMISES_DATA` array (around line 8) and edit the text of the vows:
+```typescript
+const PROMISES_DATA: PromiseCardData[] = [
+  {
+    id: 1,
+    emoji: "🌸",
+    promiseText: "I promise to always listen...", // <--- Sentence shown on the front
+    dedicationText: "Through quiet times or loud times, I'm your safest harbor.", // <--- Dedication shown on the back!
+  },
+  ...
+]
+```
+
+--------------------------------------------------------------------------------
+6. HOW TO CUSTOMIZE THE BIRTHDAY GIRL PORTRAITS & CAPTIONS
+--------------------------------------------------------------------------------
+
+To customize the 3 beautiful portraits, the crown crown effect, and captions of your birthday girl:
+
+Open the file:
+👉 `/src/components/BirthdayGirlSection.tsx`
+
+Locate the `PORTRAITS` array near line 11:
+```typescript
+  const PORTRAITS = [
+    {
+      id: 1,
+      src: "https://images.unsplash.com...", // <-- Change to your own image path or URL
+      caption: "🌸 Her Beautiful Smile",       // <-- Change caption text
+      style: "sm:translate-y-6 rotate-[-3deg]",
+    },
+    {
+      id: 2, // Center portrait with crown effect!
+      src: "https://images.unsplash.com...", // <-- Change to your premium center image
+      caption: "✨ The Eyes That Sparkle Like Stars",
+      style: "scale-105 z-10 border-4 border-yellow-300 shadow-[0_0_25px_rgba(253,224,71,0.4)]",
+      isCenter: true,
+    },
+    ...
+  ]
+```
+
+--------------------------------------------------------------------------------
+7. HOW AND WHERE TO EDIT THE LANDING SCREEN & FINALE
+--------------------------------------------------------------------------------
+
+- LANDING SCREEN TITLE:
+  Open `/src/App.tsx` and search for "A Love Story Written Across Time 💖" or "For The One Who Makes My World Beautiful" to change the landing and introductory text.
+
+- FINALE & FIREWORKS SECTION:
+  Open `/src/components/FinaleSection.tsx` and search for "Happy Birthday, My Love 🎂" to change the final celebratory message and final sign-off name.
+
+--------------------------------------------------------------------------------
+8. HOW TO CUSTOMIZE THE COUPLE IMAGE ON "OUR STORY CONTINUES" SIGN-OFF
+--------------------------------------------------------------------------------
+
+To change the sweet photo of you both displayed as the grand finale:
+
+Open the file:
+👉 `/src/components/FinaleSection.tsx`
+
+Locate the `<img>` tag inside the activated block (search for "Together, Hand in Hand"):
+```typescript
+                  <img
+                    src="https://images.unsplash.com..." // <-- Change to your own beautiful couple photo path or URL
+                    alt="The Beautiful Couple"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+```
+And customize the caption text right below it:
+```typescript
+                    <p className="font-serif text-white ...">
+                      Together, Hand in Hand ❤️ // <-- Put your sweet nickname or custom phrase here!
+                    </p>
+```
+
+================================================================================
+❤️ Happy Customizing! Your cinematic website is set up to look incredible.
+================================================================================

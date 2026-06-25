@@ -1,0 +1,85 @@
+================================================================================
+            HOW TO RUN YOUR CINEMATIC WEBSITE LOCALLY ON YOUR COMPUTER
+================================================================================
+
+Follow this simple, step-by-step terminal guide to launch your gorgeous, interactive 
+love story website on your personal machine (localhost) before publishing!
+
+--------------------------------------------------------------------------------
+PREREQUISITE: INSTALL Node.js
+--------------------------------------------------------------------------------
+Before writing commands, your computer needs Node.js installed to run JavaScript.
+1. Download & install Node.js from: https://nodejs.org/ (Choose the "LTS" version).
+2. To verify it downloaded successfully, open your computer's terminal or command 
+   prompt (CMD) and type:
+   node -v
+   npm -v
+
+--------------------------------------------------------------------------------
+STEP 1: DOWNLOAD AND EXTRACT YOUR CODE
+--------------------------------------------------------------------------------
+1. Export your project from the AI Studio menu inside the developer playground 
+   (select settings/menu -> "Export ZIP" or "Export to GitHub").
+2. Extract the downloaded ZIP folder to a safe place on your computer (for example, 
+   your Desktop).
+
+--------------------------------------------------------------------------------
+STEP 2: OPEN YOUR TERMINAL INSIDE THE PROJECT FOLDER
+--------------------------------------------------------------------------------
+- WINDOWS:
+  1. Open the extracted folder, hold Shift and Right-Click on an empty space inside.
+  2. Select "Open PowerShell window here" or "Open in Terminal".
+  Alternatively: Open Command Prompt (cmd) and navigate there using `cd`:
+  cd "C:\Users\YourName\Desktop\extracted-folder"
+
+- MACOS / LINUX:
+  1. Open the Terminal application.
+  2. Type `cd ` (with a trailing space) and then drag and drop the extracted 
+     folder from Finder directly into your Terminal window, then press Enter.
+
+--------------------------------------------------------------------------------
+STEP 3: RUN THE COMMANDS
+--------------------------------------------------------------------------------
+
+Type these commands in order in your terminal:
+
+1. INSTALL ALL THE PACKAGES (Run once):
+   -----------------------------------------------------------------------------
+   npm install
+   -----------------------------------------------------------------------------
+   *What this does:* Downloads React, Vite, Framer Motion, and beautiful icons 
+   listed in package.json to populate your local project environment.
+
+2. RUN THE DEVELOPMENT REFRESHING SERVER:
+   -----------------------------------------------------------------------------
+   npm run dev
+   -----------------------------------------------------------------------------
+   *What this does:* Boots up the extremely fast local Vite server.
+
+--------------------------------------------------------------------------------
+STEP 4: OPEN IN YOUR WEB BROWSER
+--------------------------------------------------------------------------------
+Once the developer server boots, your terminal screen will show a message like:
+  ➜ Local:   http://localhost:5173/   OR   http://localhost:3000/
+
+1. Copy that address or hold Ctrl/Cmd and click the link inside your terminal.
+2. Web browsers like Chrome, Edge, or Safari will open the live, high-fidelity 
+   preview.
+3. Keep the terminal window open while editing files! Any saved changes will 
+   automatically update instantly in your browser (Hot Module Replacement).
+
+--------------------------------------------------------------------------------
+ADDITIONAL USEFUL COMMANDS
+--------------------------------------------------------------------------------
+
+- TO STOP THE RUNNING LOCALHOST SERVER:
+  Press `Ctrl + C` keys inside your terminal.
+
+- TO TEST A SECURE PRODUCTION BUILD LOCALLY:
+  This allows you to see exactly how your application compiles for deployment:
+  1. npm run build  <-- Compiles, minifies, and optimizes your code into `dist/`
+  2. npm run preview <-- Serves the compiled production build locally to test.
+
+--------------------------------------------------------------------------------
+❤️ Happy Coding! Go ahead and enjoy personalizing and viewing your changes!
+================================================================================

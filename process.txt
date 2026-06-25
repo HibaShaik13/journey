@@ -1,0 +1,77 @@
+================================================================================
+          DEPLOYMENT PROCEDURE: JOURNEY THROUGH TIME ❤️ OUR LOVE STORY
+================================================================================
+
+This document outlines the step-by-step procedure to deploy your premium, 
+cinematic love story website so you can share it with your loved one.
+
+Because this application is built with React, Vite, and Tailwind CSS, it can be 
+deployed for free and hosted instantly on multiple platforms.
+
+--------------------------------------------------------------------------------
+OPTION 1: THE AI STUDIO ONE-CLICK DEPLOY (EASIEST)
+--------------------------------------------------------------------------------
+
+1. Open the Google AI Studio settings or dashboard menu in your current view.
+2. Look for the "Share" or "Deploy" wizard at the top-right corner.
+3. Click "Deploy to Cloud Run" or use the platform's native publishing option.
+4. AI Studio will automatically containerize and host your application, 
+   providing you with a secure, shareable live URL instantly.
+
+--------------------------------------------------------------------------------
+OPTION 2: DEPLOYING TO NETLIFY OR VERCEL (RECOMMENDED FOR PERSONAL WEB LINKS)
+--------------------------------------------------------------------------------
+
+Netlify and Vercel are premier cloud hosting platforms for modern static web apps.
+They offer extremely fast load times, automated secure HTTPS, and are 100% free.
+
+STEP A: EXPORT CONFIGURATION
+1. From the AI Studio menu inside the playground, export this workspace 
+   as a ZIP Archive or connect and push directly to a GitHub Repository.
+2. Extract the ZIP locally on your computer if you downloaded it.
+
+STEP B: INSTALL DEPENDENCIES & TEST LOCALLY (OPTIONAL)
+1. Ensure Node.js is installed on your computer.
+2. Open your terminal in the extracted folder and run:
+   npm install
+3. Start the local server to verify everything looks perfect:
+   npm run dev
+4. Build the production build locally:
+   npm run build
+   (This creates a ready-to-host `dist` directory with all optimized files).
+
+STEP C: PUBLISHING WITHOUT CODING (DRAG & DROP)
+1. Go to Netlify (https://www.netlify.com) or Vercel (https://vercel.com) 
+   and sign up for a free account.
+2. For Netlify: Go to the "Sites" tab, scroll down, and find the drag-and-drop 
+   box labeled "Want to deploy a new site without connecting to Git?".
+3. Drag and drop your local `dist` folder directly into the box.
+4. Within 5 seconds, your site is live! You can customize your URL (e.g., 
+   `our-timeless-story.netlify.app`) for free in the site settings.
+
+--------------------------------------------------------------------------------
+OPTION 3: DEPLOYING VIA GITHUB AUTODEPLOYMENT
+--------------------------------------------------------------------------------
+
+If you want the website to automatically update every time you change a file:
+1. Create a free GitHub account and a new repository.
+2. Push your extracted code to this GitHub repository.
+3. Log in to Vercel or Netlify, select "Add New Site" -> "Import from Git".
+4. Authorize your GitHub account and select your repository.
+5. Set the build parameters (these are automatically detected by default):
+   - Build Command: npm run build
+   - Publish Directory: dist
+6. Click "Deploy". Now, any changes pushed to GitHub will instantly update 
+   the live website!
+
+--------------------------------------------------------------------------------
+TECHNICAL SUMMARY
+--------------------------------------------------------------------------------
+- Framework: React (v18+)
+- Bundler: Vite
+- CSS Utility: Tailwind CSS
+- Assets: Optimized high-contrast romantic imagery and Mixkit instrumental lofi audio tracks.
+
+All code has been validated, verified, and compiled successfully. Enjoy sharing 
+this digital love letter! ❤️
+================================================================================
